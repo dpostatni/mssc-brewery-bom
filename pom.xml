@@ -217,11 +217,11 @@
                                 <requireMavenVersion>
                                    <version>[3.6.0,)</version> <!-- version 3.6.0 or higher  this notation is for that [3.6.0,)-->
                                 </requireMavenVersion>
-                                <requiredJavaVersion>
-                                    <version>17</version>
-                                </requiredJavaVersion>
+                                <requireJavaVersion>
+                                    <version>[11,)</version>
+                                </requireJavaVersion>
                                 <requireReleaseDeps>
-                                    <onlyWhenRelease>true</onlyWhenRelease> <!-- It means that we can't have snapshots on our builds (It's a very good pratice) -->
+                                    <onlyWhenRelease>true</onlyWhenRelease> <!-- It means that we can't have snapshots on our builds (It's a very good practice) -->
                                     <message>Release builds must not have on snapshot dependencies</message>
                                 </requireReleaseDeps>
                             </rules>
